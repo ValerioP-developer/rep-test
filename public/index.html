@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Example Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet"><style>
+
+/* WHERE: FIRST CONTAINER "GUY STEER PICTURE BACKGROUND" */
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  background-image: url('/images-loopstudio/desktop/image-hero.jpg');
+  background-size: cover;
+  background-position: center; 
+  background-repeat: no-repeat;
+  max-height: 900px;
+}
+.flex-item-left {
+  flex: 55%;
+  margin-left: 8%;
+  margin-top:4%;
+}
+.flex-item-right {
+  flex: 50%;
+  margin-right: 8%;
+  margin-top:6%;
+}
+.nav {
+   float: right;
+}
+.nav li a{
+    color: white;
+    font-size: 1.2vw;
+    padding-left: 20px;
+    text-align: left;
+}
+.text-title{
+    color: hsl(0, 0%, 100%);
+    font-weight: bolder;
+    font-size: 45px;
+    text-align: left;
+}
+.marketing-text{
+    font-size: 60px;
+    text-align: left;
+    border: 3px solid #fff;
+    margin-top: 15%;
+    margin-bottom: 15%;
+    padding: 50px;
+    color: white;
+}
+.base-family-text{
+    font-family: 'Alata', sans-serif;
+}
+.text-img{
+    font-family: 'Josefin Sans', sans-serif;
+    position: absolute;
+    color:hsl(0, 0%, 100%);
+    text-align:left ;
+}
+#icon-hamburger{
+ visibility: hidden;
+}
+/* WHERE: SECOND CONTAINER BLUE "T-SHIRT GUY PICTURE BACKGROUND" */
+.flex-container-interactive {
+  display: flex;
+  flex-direction: row;
+}
+.interactive-div{
+  color:black;
+  background-color: white;
+}
+#img-interactive{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+/* WHERE: FOOTER CONTAINER */
+.footer-nav a {
+  color: black;
+  padding-right: 20px;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.footer-social a{
+  padding: 10px;
+}
+#last-copyright-footer{
+  font-size: 15px;
+}
+/* WHERE: CREATION CONTAINER */
+.flex-container-creations {
+  display: flex;
+ /* flex-direction: row; */
+  margin-top:10%;
+}
+.flex-item-creations{
+  flex: 50%;
+  margin-left: 8%;
+}
+.flex-item-btn {
+  flex: 50%;
+  margin-right: 8%;
+}
+.text-creation{
+  /* text-align: left; */
+  font-family: 'Alata', sans-serif;
+  font-family: 'Josefin Sans', sans-serif;
+}
+#see-all-btn{
+  width: 30%;
+  height: 80px;
+  background-color: transparent;
+  outline-color:black;
+}
+.container-btn{
+  /* text-align: right; */
+  margin-top: 2%;
+}
+.interactive-text{
+  color: hsl(0, 0%, 55%);
+}
+/* BP: UNTIL 1000px  */
+@media (max-width: 1000px ) {
+  .flex-container {
+    flex-direction: column;
+  }
+  .nav{
+      display: none;
+  }
+  .marketing-text{
+      margin-right: 8%;
+      font-size: 8vw;
+      padding: 30px;
+  }
+  .text-title{
+      font-size: 6.2vw;
+      margin-top:6%;
+  }
+  #icon-hamburger{
+      visibility:visible ;
+      float:right;
+      margin-right: 8%;
+      margin-top:4%;
+  }
+  .footer-container{
+  flex-direction: column;
+  }
+}
+/* MIN-WIDTH 801px */
+@media (min-width: 801px) {
+  .footer-social{
+    margin-top: 4%;
+    overflow: hidden;
+    text-align:right;
+  }
+  .text-img{
+    font-size: 3vw;
+    left:8%;
+    bottom: 2%;
+  }
+  /* WHERE: FOOTER-CONTAINER */
+  .social-container-sm{
+    display: none;
+  }
+  .footer-container-sm{
+    display: hidden;
+  }
+  #nav-footer-company li {
+    list-style-type:none;
+    display: inline;
+  }
+  #nav-footer-company> li a{
+    color: white;
+    padding-right:15px ;
+    align-items: left;
+  }
+  /* GRID IMG BACKGROUND */
+  #hearth-img{
+    background-image: url('images-loopstudio/desktop/image-deep-earth.jpg'); 
+  }
+  #night-img{
+    background-image: url('images-loopstudio/desktop/image-night-arcade.jpg'); 
+  }
+  #soccer-img{
+    background-image:url('images-loopstudio/desktop/image-soccer-team.jpg');
+  }
+  #grid-img{
+    background-image:url('images-loopstudio/desktop/image-grid.jpg');
+  }
+  #above-img{
+    background-image:url('images-loopstudio/desktop/image-from-above.jpg');
+  }
+  #pocket-img{
+    background-image:url('images-loopstudio/desktop/image-pocket-borealis.jpg');
+  }
+  #curyosity-img{
+    background-image:url('images-loopstudio/desktop/image-curiosity.jpg');
+  }
+  #fisheye-img{
+    background-image:url('images-loopstudio/desktop/image-fisheye.jpg');
+  }
+  /* WHERE: SECOND CONTAINER BLUE "T-SHIRT GUY PICTURE BACKGROUND" */ 
+  .flex-interactive-left {
+    flex: 60%;
+    margin-left: 8%;
+    background-image: url('images-loopstudio/desktop/image-interactive.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .flex-interactive-footer-left {
+    flex: 60%;
+    margin-left: 8%;
+    background-color: black;
+  }
+  .flex-interactive-right {
+    flex: 40%;
+    margin-right: 8%;
+    background-color: white;
+  }
+  .flex-interactive-footer {
+    flex: 40%;
+    margin-right: 8%;
+    background-color: black;
+  }
+  .title-interactive-text{
+    font-size:2.8vw;
+    margin-left: 5%;
+    margin-top: 5%;
+    font-family: 'Alata', sans-serif;
+    font-family: 'Josefin Sans', sans-serif;
+  }
+  .interactive-text{
+    font-size: 18px;
+    margin-left: 5%;
+    margin-right: 5%;
+    font-family: 'Alata', sans-serif;
+  }
+  .interactive-div{
+    color:black;
+    background-color: white;
+    margin-top:40%;
+    height: 78%;
+    margin-left: -32%;
+    padding-left:50px;
+    padding-top:50px;
+    font-family: 'Alata', sans-serif;
+    font-family: 'Josefin Sans', sans-serif;
+  }
+  /* WHERE: GRID CONTAINER WITH PICTURES */
+  .grid-container {
+    margin-left: 8%;
+    margin-right: 8%;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 0px;
+    /*background-color: red;*/
+    margin-top: 10%;
+  }
+  .grid-container > div {
+    margin-top: 5%;
+    background-color: rgba(255, 255, 255, 0.8);
+    background-size: cover;
+    text-align: center;
+    height: 500px;
+  }
+  .grid-img{
+    margin-left: 5%;
+    position: relative;
+  }
+  /* WHERE: OUR CREATION CONTAINER */
+  .flex-container-creations {
+    flex-direction: row;
+  }
+  .container-btn{
+    text-align: right;
+    margin-top: 2%;
+  }
+  .text-creation{
+    text-align: left;
+    font-size: 4vw;
+  }
+  #see-all-btn{
+    font-size: 20px;
+  }
+  #see-all-btn-sm{
+    width: 40%;
+    height: 80px;
+    font-size: 20px;
+    background-color: transparent;
+    outline-color:black;
+    display:none;
+  }
+  /*WHERE: FOOTER CONTAINER */
+  .footer-container{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    font-size: 30px;
+    text-align: center;
+    margin-left: 8%;
+    margin-right: 8%;
+  }
+  .nav-container {
+    padding: 10px;
+    padding-left: 0%;
+    flex: 50%;
+  }
+  .social-container {
+    background-color: dodgerblue;
+    padding: 10px;
+    flex: 50%;
+  }
+  /*
+  .nav-footer{
+  display: inline-flex;
+  float: left;
+  }
+  .nav-footer li {
+  list-style-type:none;
+  }
+  .nav-footer li a{
+      color: black;
+      font-size: 18px;
+      padding-left: 20px;
+      text-align: left;
+  }
+   .nav-footer{
+    float: left;
+  }
+  */
+  .social-nav{
+      color: black;
+      font-size: 1.2vw;
+  }
+  #loopstudio-footer{
+    font-size: 30px;
+    padding-left: 0%;
+    color: white;
+    font-weight: bold;
+    background-color: black;
+    text-align: left;
+    align-items: left;
+  }
+  #copyright-last-footer{
+    font-size: 18px;
+  }
+  /* FOOTER LINK */
+  .footer-nav {
+    overflow: hidden;
+    text-align: left;
+  }
+
+  .nav-last-footer{
+    font-size: 18px;
+  }
+  #last-nav-footer{
+    text-align: left;
+  }
+  #last-copyright-footer{
+    text-align: right;
+  }
+}
+/* MAX-WIDTH: 800px */
+@media (max-width: 800px) {
+  /* WHERE BLUE GUY INTERACTIVE IMAGE */
+  .flex-container-interactive {
+      flex-direction: column;
+  }
+  .flex-interactive-left {
+    margin:5%;
+    flex: 100%;
+    background-image: url('images-loopstudio/desktop/image-interactive.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .flex-interactive-footer {
+    flex: 100%;
+    background-color: black;
+  }
+  .flex-interactive-right {
+    flex: 100%;
+    background-color: white;
+  }
+  .title-interactive-text{
+    font-size:6vw;
+    font-family: 'Alata', sans-serif;
+    text-align: center;
+    margin-top:10%;
+  }
+  .interactive-text{
+    margin-left: 10%;
+    margin-right: 10%;
+    text-align: center;
+    font-size: 18px;
+    font-family: 'Alata', sans-serif;
+    font-size: 18px;
+  }
+  /* WHERE: GRID CONTAINER WITH PICTURE BACKGROUND */
+  .grid-container {
+    margin-left: 10%;
+    margin-right: 10%;
+    display: column;
+    margin-top: 10%;
+  }
+  .grid-container > div {
+    margin-top: 5%;
+    background-color: rgba(255, 255, 255, 0.8);
+    background-size: cover;
+    background-position: center;
+    height: 200px;
+  }
+  .text-img{
+      left:4%;
+      bottom: 4%;
+  }
+  .grid-img{
+  position: relative;
+  }
+  /* WHERE: CONTAINER CREATIONS */
+  .flex-container-creations {
+    flex-direction: column;
+  }
+  .container-btn{
+    text-align: center;
+    margin-top: 2%;
+  }
+  .text-creation{
+    text-align: center;
+    font-size: 35px;
+  }
+  .flex-item-creations{
+    margin-left: 0;
+  }
+  #see-all-btn{
+  display: none;
+  }
+  #see-all-btn-sm{
+    width: 30%;
+    height: 80px;
+    background-color: transparent;
+    outline-color:black;
+    visibility: visible;
+  }
+  /* WHERE: FOOTER CONTAINER */
+  /*
+  .social-container{
+    display: none;
+  }*/
+  #nav-footer-company li {
+    list-style-type:none;
+  } 
+  #nav-footer-company > li a{
+    color: white;
+    font-size: 3vw;
+    align-items: center;
+    
+    /*padding-right: 20px;*/
+  }
+  #copyright-footer{
+    text-align: center;
+  }
+  #last-nav-footer{
+    text-align: center;
+  }
+  #last-copyright-footer{
+    text-align: center;
+  }
+  .footer-container{
+    display: flex;
+    flex-direction: column;
+    font-size: 30px;
+    text-align: center;
+    margin-left: 8%;
+    margin-right: 8%;
+  }
+  .nav-container {
+    padding: 10px;
+    text-align: left;
+    padding-left: 0%;
+    flex: 100%;
+  }
+  .social-container {
+    background-color: red;
+    padding: 10px;
+    flex: 100%;
+  }
+  .nav-footer {
+  display: inline-flex;
+  }
+  .nav-footer li {
+  list-style-type:none;
+  } 
+  .nav-footer li a{
+      color: black;
+      font-size: 3vw;
+      align-items: left;
+      padding-right: 20px;
+  }
+  .social-nav{
+      color: black;
+      text-align: center;
+      font-size: 1.2vw;
+  }
+  .nav-footer {
+    float: left;
+  }
+  #loopstudio-footer{
+    font-size: 30px;
+    padding-left: 0%;
+    color: white;
+    font-weight: bold;
+    background-color: black;
+    text-align: center;
+    align-items: center;
+  }
+  #copyright-last-footer{
+    font-size: 18px;
+  }
+  #icons-container{
+    align-content: center;
+  }
+  .footer-nav {
+    overflow: hidden;
+    text-align: center;
+  }
+  .footer-social {
+    overflow: hidden;
+    text-align:center;
+  }
+  #hearth-img{
+  background-image: url('images-loopstudio/mobile/image-deep-earth.jpg'); 
+  }
+  #night-img{
+    background-image: url('images-loopstudio/mobile/image-night-arcade.jpg'); 
+  }
+  #soccer-img{
+    background-image:url('images-loopstudio/mobile/image-soccer-team.jpg');
+  }
+  #grid-img{
+    background-image:url('images-loopstudio/mobile/image-grid.jpg');
+  }
+  #above-img{
+    background-image:url('images-loopstudio/mobile/image-from-above.jpg');
+  }
+  #pocket-img{
+    background-image:url('images-loopstudio/mobile/image-pocket-borealis.jpg');
+  }
+  #curyosity-img{
+    background-image:url('images-loopstudio/mobile/image-curiosity.jpg');
+  }
+  #fisheye-img{
+    background-image:url('images-loopstudio/mobile/image-fisheye.jpg');
+  }
+}
+
+</style>
+
+</head>
+<body>
+    <!-- FIRST CONTAINER PINK BACKGROUND GUY WITH -->
+    <div class="flex-container" >
+        <div class="flex-item-left" >
+            <p class="text-title base-family-text" >  loopstudios    <img  id="icon-hamburger"  src="images-loopstudio/icon-hamburger.svg" >     
+            </p>
+            <p class=" marketing-text" style="font-family: 'Josefin Sans', sans-serif;" >
+                IMMERSIVE <br>
+                EXPERIENCES <br>
+                THAT DELIVER <br>
+            </p>
+        </div> 
+        <div class="flex-item-right" >
+            <ul class="nav base-family-text"  id="nav-top">
+                <li><a href="#home">About</a></li>
+                <li><a href="#about">Careers</a></li>
+                <li><a href="#clients">Events</a></li>  
+                <li><a href="#contact">Products</a></li>
+                <li><a href="#contact">Support</a></li>
+            </ul>
+        </div> 
+    </div> 
+    <div class="flex-container-interactive" style="margin-top: 10%;" >
+        <div class="flex-interactive-left" >
+                <img src="images-loopstudio/desktop/image-interactive.jpg"  id="img-interactive" style="background-size: cover;" id="img-man" class="img-fluid" > 
+        </div>
+        <div class="flex-interactive-right" >
+            <div class="interactive-div"   >
+                  <div class="title-interactive-text" style="font-family: 'Josefin Sans', sans-serif;margin-bottom: 2%;color:hsl(0, 0%, 41%);"><b> THE LEADER IN    <BR>
+                            INTERACTIVE VR          </b>
+                  </div>
+                  <div class="interactive-text"  >
+                    Founded in 2011, loopstudios has been producing world-class virtual reality
+                    projects for some of the best companies around the globe. Our award winnig creations
+                    have transformed business through digital experiences that bind to their brand.
+                  </div>
+            </div>
+        </div> 
+    </div>
+    <div class="flex-container-creations">
+      <div class="flex-item-creations" >
+        <p class="text-creation base-family-text" style="color:hsl(0, 0%, 41%);">  <b> OUR CREATIONS </b> </p>  
+      </div>  
+      <div class="flex-item-btn" >
+          <div class="container-btn"> <button class="button" id="see-all-btn"> SEE ALL </button>   </div> 
+      </div>  
+    </div>
+    <div class="grid-container" >
+      <div id="hearth-img"      class="grid-img" style="margin-left: 0%;">  <p class="text-img" >  DEEP <br> EARTH </p> </div>
+      <div id="night-img"       class="grid-img">  <p class="text-img" >  NIGHT <br> ARCADE </p> </div>
+      <div id="soccer-img"      class="grid-img">   <p class="text-img" > SOCCER TEAM VR <br>  </p></div>  
+      <div id="grid-img"        class="grid-img"><p class="text-img" >THE GRID <br>  </p></div> 
+      <div id="above-img"       class="grid-img"  style="margin-left: 0%;"> <p class="text-img" >FROM UP ABOVE VR <br>  </p></div>
+      <div id="pocket-img"      class="grid-img"><p class="text-img" >POCKET BOREALIS <br>  </p></div>
+      <div id="curyosity-img"   class="grid-img"> <p class="text-img" >THE CURIOSITY <br>  </p> </div>
+      <div id="fisheye-img"     class="grid-img"><p class="text-img" >MAKE IT FISHEY<br>  </p> </div>
+    </div>
+    <div style="text-align: center;margin-top:5%;"> <button class="button" id="see-all-btn-sm"> SEE ALL </button> </div>
+    <div class="flex-container-interactive" style="margin-top: 20%;background-color: black;" >
+      <div class="flex-interactive-footer-left"   style="background-color: black;">
+            <div class="nav-container" > 
+                   <p id="loopstudio-footer"> Loopstudio </p>
+            </div>
+            <div class="nav-last-footer" id="last-nav-footer">
+                  <ul class="base-family-text" id="nav-footer-company" style="padding-left: 0%;">
+                    <li><a  href="#home" >About</a></li>
+                    <li><a href="#about">Careers</a></li>
+                    <li><a href="#clients">Events</a></li>
+                    <li><a href="#contact">Products</a></li>
+                    <li><a href="#contact">Support</a></li>
+                  </ul>
+            </div>
+      </div> 
+      <div class="flex-interactive-footer"   >
+                <div class="footer-social" >
+                  <a href="#" > <img src="images-loopstudio/icon-facebook.svg"      class="img-fluid"  ></a>
+                  <a href="#" > <img src="images-loopstudio/icon-facebook.svg"      class="img-fluid"  ></a>
+                  <a href="#" > <img src="images-loopstudio/icon-facebook.svg"      class="img-fluid"  ></a>
+                  <a href="#" > <img src="images-loopstudio/icon-facebook.svg"      class="img-fluid"  ></a>
+                </div> 
+                <div class="nav-last-footer" id="last-copyright-footer" style="margin-top:47px">  @2021 Loopstudios. All right reserved.</div>
+      </div> 
+    </div>
+
+
+    <!--  *** TEMPORARY PAUSED *** 
+    <div class="footer-container">
+      <div class="nav-container  footer-nav"> 
+        <div class="nav-last-footer" id="last-nav-footer">
+          <ul class="base-family-text" id="nav-footer-company" style="padding-left: 0%;">
+            <li><a  href="#home" >About</a></li>
+            <li><a href="#about">Careers</a></li>
+            <li><a href="#clients">Events</a></li>
+            <li><a href="#contact">Products</a></li>
+            <li><a href="#contact">Support</a></li>
+          </ul>
+        </div>
+        <div class="social-container-sm">
+          <div class="footer-social">
+            <a href="#" > <img src="images-loopstudio/icon-facebook.svg"   class="img-fluid"  ></a>
+            <a href="#" > <img src="images-loopstudio/icon-facebook.svg"   class="img-fluid"  ></a>
+            <a href="#" > <img src="images-loopstudio/icon-facebook.svg"   class="img-fluid"  ></a>
+            <a href="#" > <img src="images-loopstudio/icon-facebook.svg"   class="img-fluid"  ></a>
+          </div> 
+          <div class="nav-last-footer" id="last-copyright-footer" >  @2021 Loopstudios. All right reserved.</div>
+        </div>
+      </div>
+      <div class="social-container">
+          <div class="nav-last-footer" id="last-copyright-footer" >  @2021 Loopstudios. All right reserved.</div>
+      </div>
+    </div>-->
+<script>  
+/*  
+    const mediaQuery = window.matchMedia('(max-width: 801px)')
+      // Check if the media query is true
+      if (mediaQuery.matches) {
+        // Then trigger an alert
+        $("#footer-social").remove();
+    }*/
+</script>
+
+</body>
+</html>
