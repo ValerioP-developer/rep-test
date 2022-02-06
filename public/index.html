@@ -11,682 +11,667 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet"><style>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:wght@600;700&display=swap" rel="stylesheet">
 
-/* WHERE: FIRST CONTAINER "GUY STEER PICTURE BACKGROUND" */
-.flex-container {
-  display: flex;
-  flex-direction: row;
-  background-image: url('/images-loopstudio/desktop/image-hero.jpg');
-  background-size: cover;
-  background-position: center; 
-  background-repeat: no-repeat;
-  max-height: 900px;
-}
-.flex-item-left {
-  flex: 55%;
-  margin-left: 8%;
-  margin-top:4%;
-}
-.flex-item-right {
-  flex: 50%;
-  margin-right: 8%;
-  margin-top:6%;
-}
-.nav {
-   float: right;
-}
-.nav li a{
-    color: white;
-    font-size: 1.2vw;
-    padding-left: 20px;
-    text-align: left;
-}
-.text-title{
-    color: hsl(0, 0%, 100%);
-    font-weight: bolder;
-    font-size: 45px;
-    text-align: left;
-}
-.marketing-text{
-    font-size: 60px;
-    text-align: left;
-    border: 3px solid #fff;
-    margin-top: 15%;
-    margin-bottom: 15%;
-    padding: 50px;
-    color: white;
-}
-.base-family-text{
-    font-family: 'Alata', sans-serif;
-}
-.text-img{
-    font-family: 'Josefin Sans', sans-serif;
-    position: absolute;
-    color:hsl(0, 0%, 100%);
-    text-align:left ;
-}
-#icon-hamburger{
- visibility: hidden;
-}
-/* WHERE: SECOND CONTAINER BLUE "T-SHIRT GUY PICTURE BACKGROUND" */
-.flex-container-interactive {
-  display: flex;
-  flex-direction: row;
-}
-.interactive-div{
-  color:black;
-  background-color: white;
-}
-#img-interactive{
+<style>
+    .flex-container {
+        display: flex;
+        flex-direction: row;
+        background-color: white;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    .flex-container-text {
+        display: flex;
+        flex-direction: row;
+     }
+    .flex-testimonial-left {
+        flex: 33.33%;
+        margin-top:4%;
+    }
+    .flex-testimonial-center {
+        flex: 33.33%;
+        margin-top:4%;
+    }
+    .flex-testimonial-right {
+        flex: 33.33%;
+        margin-top:4%;
+    }
+    .nav {
+     float: right;
+     margin-top: 4%;
+    }
+    .nav li a{
+        color: white;
+        font-size: 20px;
+        padding-left: 20px;
+        text-align: left;
+        font-family: 'Barlow', sans-serif;
+    }
+    .text-title{
+        color: white;
+        font-weight: bolder;
+        font-size: 55px;
+        text-align: left;
+    }
+    .marketing-text{
+        font-size: 60px;
+        text-align: left;
+        border: 3px solid #fff;
+        padding: 50px;
+        color: white;
+    }
+    .base-family-text{
+        font-family: 'Fraunces', serif;
+        font-weight: bold;
+    }
+    .text-img{
+        font-family: 'Alata', sans-serif;
+        font-family: 'Josefin Sans', sans-serif;
+        position: absolute;
+        color:red;
+        text-align:left ;
+    }
+    .transform-title{
+       font-size: 40px; 
+       font-family: 'Fraunces', serif;
+       font-weight: bold;
+    }
+    .transform-description{
+        font-family: 'Barlow', sans-serif;     
+    }
+    .fruits-text-description{
+        font-family: 'Barlow', sans-serif;
+    }
+    .transform-footer{
+        font-family: 'Fraunces', sans-serif;
+        font-weight: bold;
+    }
+    .h3{
+        font-family: 'Fraunces', sans-serif;
+        font-weight: bold;
+    }
+    .card-text{
+        font-family: 'Barlow', sans-serif;
+        color:  hsl(232, 10%, 55%);  
+    }
+    .card-director-text{
+        font-family: 'Barlow', sans-serif;
+        font-weight: bold;
+        color:hsl(210, 4%, 67%);
+    }
+
+/*############################################## BUTTON ###############################################*/
+    .button{
+        background-color: #4CAF50; /* Green */
+        border: none;
+        color: white;
+        padding: 16px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin-left: 20px;
+        transition-duration: 0.4s;
+        cursor: pointer;
+        font-family: 'Fraunces', serif;
+        font-weight: bold;
+    }
+    .button {
+        background-color: white; 
+        border-radius: 30px;
+        color: black; 
+       /* border: 2px solid #4CAF50; */
+    }
+    /*
+    .button:hover {
+        background-color: #4CAF50;
+        color: white;
+    }*/
+/*######################################### CARD ###########################################################*/
+.card {
+  /*box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);*/
   width: 100%;
-  height: 100%;
-  object-fit: cover;
+  max-height: 450px;
+  text-align: center;
+  font-family: arial;
+  border-style: none;
 }
-/* WHERE: FOOTER CONTAINER */
-.footer-nav a {
-  color: black;
-  padding-right: 20px;
-  text-decoration: none;
+.title {
+  color: grey;
+  font-weight: bold;
+  font-size: 16px;
+  max-height: 420px;
+  padding: 5%;
+}
+/*
+button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
   font-size: 18px;
 }
+button:hover, a:hover {
+  opacity: 0.7;
+}
+*/
+a{
+  text-decoration: none;
+  font-size: 22px;
+  color: hsl(167, 40%, 24%);;
+  font-family: 'Barlow', sans-serif;
+}
+/* The grid container */
+.grid-container {
+  display: grid;
+  grid-template-areas: 
+  'left left left right right right' 
+  'middle middle middle middle middle middle';
+  background-image: url('/images-sunnyside/desktop/image-header.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 900px;
+}
+.header {
+  grid-area: header;
+  background-color: #f1f1f1;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+}
 
-.footer-social a{
+.left,
+.middle,
+.right {
   padding: 10px;
+ /* Should be removed. Only for demonstration */
 }
-#last-copyright-footer{
-  font-size: 15px;
+/* Style the left column */
+.left {
+  grid-area: left;
+  margin-top: 4%;
+  margin-left: 10%;
 }
-/* WHERE: CREATION CONTAINER */
-.flex-container-creations {
-  display: flex;
- /* flex-direction: row; */
-  margin-top:10%;
+/* Style the middle column */
+.middle {
+  grid-area: middle;
 }
-.flex-item-creations{
-  flex: 50%;
-  margin-left: 8%;
+/* Style the right column */
+.right {
+  grid-area: right;
 }
-.flex-item-btn {
-  flex: 50%;
-  margin-right: 8%;
+/* Float four columns side by side */
+.column {
+  width: 100%;
+  padding: 0 10px;
 }
-.text-creation{
-  /* text-align: left; */
-  font-family: 'Alata', sans-serif;
-  font-family: 'Josefin Sans', sans-serif;
+/* COMMON- Fruits text container */
+.fruits-text-container{
+    background: transparent;
 }
-#see-all-btn{
-  width: 30%;
-  height: 80px;
-  background-color: transparent;
-  outline-color:black;
+.text-square-container{
+    background: transparent;
+    padding:10%;
 }
-.container-btn{
-  /* text-align: right; */
-  margin-top: 2%;
+.text-testimonial{
+    font-weight: bold;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    font-family: 'Fraunces', serif;
+    font-weight: bold;
+ }
+.fruits-text-title{
+    font-family: 'Fraunces', serif;
+    font-weight: bold;
 }
-.interactive-text{
-  color: hsl(0, 0%, 55%);
+.container:hover .image {
+  opacity: 0.1;
 }
-/* BP: UNTIL 1000px  */
-@media (max-width: 1000px ) {
+
+
+/* Customized break point for button */
+@media  only screen and (min-width: 904px) {
+      #btn-link{
+         display: visible;
+      }
+}
+@media  only screen and (max-width: 903px) {
+      #btn-link{
+          display: none;
+      }
+}
+/* ****************************************************************************** */
+@media  only screen and (min-width: 700px) {
+    .text-testimonial{
+      font-size: 45px;
+      margin-top:10%;
+    }
+    div#column-footer {
+        margin-top:6%;
+    }
+    #hamb-icon{
+       visibility: hidden;
+    }
+    #creative-text{
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    #sunny-text-top{
+        margin-left: 10%;
+    }
+    #nav-top{
+        margin-right: 10%;
+    }
+    .text-square-container{
+        text-align: center;
+        margin: auto;
+        padding:10%;
+        width: 80%;
+        justify-content: center;
+        height: 100%;   
+    }
+    .transform-title{
+        text-align: left;
+        font-size: 35px;
+         padding-top: 5%;
+        font-weight: bold;
+    }
+    .transform-description{
+        text-align: left;
+        font-size: 18px;
+
+    }
+    .transform-footer{
+        text-align: left;
+       /*  padding-bottom: 10%; */
+        font-size: 18px;
+    }
+    .grid-img-container {
+        display: grid;
+        
+        grid-template-columns: auto auto ;
+    }
+    .grid-lastimg-container {
+        display: grid;
+        grid-template-columns: auto auto auto auto ;
+    }
+    .fruits-text-container{
+        padding:5%;
+        padding-top: 50%;
+        text-align: center;
+        margin: auto;
+        width: 50%;
+        justify-content: center;
+        height: 100%;
+    }
+    .fruits-text-title{
+        font-size: 18px;
+        font-weight: bold;
+        text-align: center;
+        justify-content: center;
+    }
+    .fruits-text-description{
+        text-align: center;
+        font-size: 15px;
+        justify-content: center;
+        margin-bottom: 2%;
+    }
+    .social-icon-footer{
+            width: 30px;
+            margin-left: 2%;
+            margin-bottom: 5%;
+    }
+}
+
+@media  only screen and (max-width: 699px) {
+    #egg-img{order: 1;}  #paragraph-text-1{ order:2}    #glass-img{order:3}    #square-txt-1{order:4}   #square-txt-2{order:5}   #square-txt-3{order:6}  
+    .social-icon-footer{
+            width: 30px;
+            margin-left: 2%;
+            margin-bottom: 15%;
+    }
+    div#column-footer {
+        margin-top:10%;
+    }
+    .text-testimonial{
+      font-size: 30px;
+      margin-top:10%;
+    }
+    
+   #hamb-icon{
+       visibility: visible;
+       float: right;   }
+   #sunny-text-top{
+        margin-left: 10%;
+        margin-top: 2%;
+   }
+  #nav-top{
+      display: none;
+  }
+  .left{
+      margin: 5%;
+  }
+  .text-square-container{
+        text-align: center;
+        margin: auto;
+        width: 100%;
+        justify-content: center;
+        height: 100%;   
+  }
+  .transform-title{
+        text-align: center;
+        font-size: 36px;
+        padding-top: 5%;
+        font-weight: bold;
+        justify-content: center;
+  }
+  .transform-description{
+        text-align: center;
+        font-size: 22px;
+        justify-content: center;
+  }
+  .transform-footer{
+        text-align: center;
+        padding-bottom: 5%;
+        font-size: 16px;
+        justify-content: center;
+  }
+  .fruits-text-container{
+    padding-top:20%;
+    text-align: center;
+    margin: auto;
+    width: 60%;
+    justify-content: center;
+    height: 100%;
+  }
+  .fruits-text-title{
+    padding-top: 30%;
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+    justify-content: center;
+  }
+  .fruits-text-description{
+    text-align: center;
+    font-size: 22px;
+    justify-content: center;
+  }
+  .grid-container  {
+    grid-template-areas: 
+      'left left left left left left' 
+      'right right right right right right'
+      'middle middle middle middle middle middle';
+  }
   .flex-container {
     flex-direction: column;
   }
-  .nav{
-      display: none;
+  .flex-testimonial-left{
+     margin-left: 0%; margin-right: 0%;
   }
-  .marketing-text{
-      margin-right: 8%;
-      font-size: 8vw;
-      padding: 30px;
+   .flex-testimonial-right{
+     margin-left: 0%; margin-right: 0%;
   }
-  .text-title{
-      font-size: 6.2vw;
-      margin-top:6%;
+  .testimonial-picture {
+     border-radius: 50%;
   }
-  #icon-hamburger{
-      visibility:visible ;
-      float:right;
-      margin-right: 8%;
-      margin-top:4%;
+  /* IMG GRID */
+  #brand-img{
+    background-image: url('images-sunnyside/mobile/image-transform.jpg'); 
   }
-  .footer-container{
-  flex-direction: column;
+  .grid-img-container {
+    flex-direction: column;
+    display: flex;
+    grid-template-columns: auto ;
   }
-}
-/* MIN-WIDTH 801px */
-@media (min-width: 801px) {
-  .footer-social{
-    margin-top: 4%;
-    overflow: hidden;
-    text-align:right;
-  }
-  .text-img{
-    font-size: 3vw;
-    left:8%;
-    bottom: 2%;
-  }
-  /* WHERE: FOOTER-CONTAINER */
-  .social-container-sm{
-    display: none;
-  }
-  .footer-container-sm{
-    display: hidden;
-  }
-  #nav-footer-company li {
-    list-style-type:none;
-    display: inline;
-  }
-  #nav-footer-company> li a{
-    color: white;
-    padding-right:15px ;
-    align-items: left;
-  }
-  /* GRID IMG BACKGROUND */
-  #hearth-img{
-    background-image: url('images-loopstudio/desktop/image-deep-earth.jpg'); 
-  }
-  #night-img{
-    background-image: url('images-loopstudio/desktop/image-night-arcade.jpg'); 
-  }
-  #soccer-img{
-    background-image:url('images-loopstudio/desktop/image-soccer-team.jpg');
-  }
-  #grid-img{
-    background-image:url('images-loopstudio/desktop/image-grid.jpg');
-  }
-  #above-img{
-    background-image:url('images-loopstudio/desktop/image-from-above.jpg');
-  }
-  #pocket-img{
-    background-image:url('images-loopstudio/desktop/image-pocket-borealis.jpg');
-  }
-  #curyosity-img{
-    background-image:url('images-loopstudio/desktop/image-curiosity.jpg');
-  }
-  #fisheye-img{
-    background-image:url('images-loopstudio/desktop/image-fisheye.jpg');
-  }
-  /* WHERE: SECOND CONTAINER BLUE "T-SHIRT GUY PICTURE BACKGROUND" */ 
-  .flex-interactive-left {
-    flex: 60%;
-    margin-left: 8%;
-    background-image: url('images-loopstudio/desktop/image-interactive.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-  .flex-interactive-footer-left {
-    flex: 60%;
-    margin-left: 8%;
-    background-color: black;
-  }
-  .flex-interactive-right {
-    flex: 40%;
-    margin-right: 8%;
-    background-color: white;
-  }
-  .flex-interactive-footer {
-    flex: 40%;
-    margin-right: 8%;
-    background-color: black;
-  }
-  .title-interactive-text{
-    font-size:2.8vw;
-    margin-left: 5%;
-    margin-top: 5%;
-    font-family: 'Alata', sans-serif;
-    font-family: 'Josefin Sans', sans-serif;
-  }
-  .interactive-text{
-    font-size: 18px;
-    margin-left: 5%;
-    margin-right: 5%;
-    font-family: 'Alata', sans-serif;
-  }
-  .interactive-div{
-    color:black;
-    background-color: white;
-    margin-top:40%;
-    height: 78%;
-    margin-left: -32%;
-    padding-left:50px;
-    padding-top:50px;
-    font-family: 'Alata', sans-serif;
-    font-family: 'Josefin Sans', sans-serif;
-  }
-  /* WHERE: GRID CONTAINER WITH PICTURES */
-  .grid-container {
-    margin-left: 8%;
-    margin-right: 8%;
+  .grid-lastimg-container {
     display: grid;
-    grid-template-columns: auto auto auto auto;
-    grid-gap: 0px;
-    /*background-color: red;*/
-    margin-top: 10%;
+    grid-template-columns: auto auto;
   }
-  .grid-container > div {
-    margin-top: 5%;
-    background-color: rgba(255, 255, 255, 0.8);
-    background-size: cover;
-    text-align: center;
-    height: 500px;
-  }
-  .grid-img{
-    margin-left: 5%;
-    position: relative;
-  }
-  /* WHERE: OUR CREATION CONTAINER */
-  .flex-container-creations {
-    flex-direction: row;
-  }
-  .container-btn{
-    text-align: right;
-    margin-top: 2%;
-  }
-  .text-creation{
-    text-align: left;
-    font-size: 4vw;
-  }
-  #see-all-btn{
-    font-size: 20px;
-  }
-  #see-all-btn-sm{
-    width: 40%;
-    height: 80px;
-    font-size: 20px;
-    background-color: transparent;
-    outline-color:black;
-    display:none;
-  }
-  /*WHERE: FOOTER CONTAINER */
-  .footer-container{
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    font-size: 30px;
-    text-align: center;
-    margin-left: 8%;
-    margin-right: 8%;
-  }
-  .nav-container {
-    padding: 10px;
-    padding-left: 0%;
-    flex: 50%;
-  }
-  .social-container {
-    background-color: dodgerblue;
-    padding: 10px;
-    flex: 50%;
-  }
-  /*
-  .nav-footer{
-  display: inline-flex;
-  float: left;
-  }
-  .nav-footer li {
-  list-style-type:none;
-  }
-  .nav-footer li a{
-      color: black;
-      font-size: 18px;
-      padding-left: 20px;
-      text-align: left;
-  }
-   .nav-footer{
-    float: left;
-  }
-  */
-  .social-nav{
-      color: black;
-      font-size: 1.2vw;
-  }
-  #loopstudio-footer{
-    font-size: 30px;
-    padding-left: 0%;
-    color: white;
-    font-weight: bold;
-    background-color: black;
-    text-align: left;
-    align-items: left;
-  }
-  #copyright-last-footer{
-    font-size: 18px;
-  }
-  /* FOOTER LINK */
-  .footer-nav {
-    overflow: hidden;
-    text-align: left;
-  }
+}
 
-  .nav-last-footer{
-    font-size: 18px;
-  }
-  #last-nav-footer{
-    text-align: left;
-  }
-  #last-copyright-footer{
-    text-align: right;
-  }
+@media only screen and (max-width: 468px) {
+    .text-testimonial{
+      font-size: 20px;
+      margin-top:10%;
+    }
+    #logo,#logo-footer{
+        width: 150px;
+    }
+    #creative-text{
+        font-size: 32px;
+    }
+    .center-link  li a{
+      font-size: 15px;
+    }
+    ul.center-link {
+        margin-top: 2%;
+        line-height: 0.8;
+        padding-left: 0;
+    }   
+    .center-link  li {
+            display: block;
+            text-align: center;
+    }
+    .fruits-text-title{
+        padding-top: 30%;
+        font-size: 26px;
+        font-weight: bold;
+        text-align: center;
+        justify-content: center;
+    }
 }
-/* MAX-WIDTH: 800px */
-@media (max-width: 800px) {
-  /* WHERE BLUE GUY INTERACTIVE IMAGE */
-  .flex-container-interactive {
-      flex-direction: column;
-  }
-  .flex-interactive-left {
-    margin:5%;
-    flex: 100%;
-    background-image: url('images-loopstudio/desktop/image-interactive.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-  .flex-interactive-footer {
-    flex: 100%;
-    background-color: black;
-  }
-  .flex-interactive-right {
-    flex: 100%;
-    background-color: white;
-  }
-  .title-interactive-text{
-    font-size:6vw;
-    font-family: 'Alata', sans-serif;
-    text-align: center;
-    margin-top:10%;
-  }
-  .interactive-text{
-    margin-left: 10%;
-    margin-right: 10%;
-    text-align: center;
-    font-size: 18px;
-    font-family: 'Alata', sans-serif;
-    font-size: 18px;
-  }
-  /* WHERE: GRID CONTAINER WITH PICTURE BACKGROUND */
-  .grid-container {
-    margin-left: 10%;
-    margin-right: 10%;
-    display: column;
-    margin-top: 10%;
-  }
-  .grid-container > div {
-    margin-top: 5%;
-    background-color: rgba(255, 255, 255, 0.8);
-    background-size: cover;
-    background-position: center;
-    height: 200px;
-  }
-  .text-img{
-      left:4%;
-      bottom: 4%;
-  }
-  .grid-img{
-  position: relative;
-  }
-  /* WHERE: CONTAINER CREATIONS */
-  .flex-container-creations {
-    flex-direction: column;
-  }
-  .container-btn{
-    text-align: center;
-    margin-top: 2%;
-  }
-  .text-creation{
-    text-align: center;
-    font-size: 35px;
-  }
-  .flex-item-creations{
-    margin-left: 0;
-  }
-  #see-all-btn{
-  display: none;
-  }
-  #see-all-btn-sm{
-    width: 30%;
-    height: 80px;
-    background-color: transparent;
-    outline-color:black;
-    visibility: visible;
-  }
-  /* WHERE: FOOTER CONTAINER */
-  /*
-  .social-container{
-    display: none;
-  }*/
-  #nav-footer-company li {
-    list-style-type:none;
-  } 
-  #nav-footer-company > li a{
-    color: white;
-    font-size: 3vw;
-    align-items: center;
-    
-    /*padding-right: 20px;*/
-  }
-  #copyright-footer{
-    text-align: center;
-  }
-  #last-nav-footer{
-    text-align: center;
-  }
-  #last-copyright-footer{
-    text-align: center;
-  }
-  .footer-container{
-    display: flex;
-    flex-direction: column;
-    font-size: 30px;
-    text-align: center;
-    margin-left: 8%;
-    margin-right: 8%;
-  }
-  .nav-container {
-    padding: 10px;
-    text-align: left;
-    padding-left: 0%;
-    flex: 100%;
-  }
-  .social-container {
-    background-color: red;
-    padding: 10px;
-    flex: 100%;
-  }
-  .nav-footer {
-  display: inline-flex;
-  }
-  .nav-footer li {
-  list-style-type:none;
-  } 
-  .nav-footer li a{
-      color: black;
-      font-size: 3vw;
-      align-items: left;
-      padding-right: 20px;
-  }
-  .social-nav{
-      color: black;
-      text-align: center;
-      font-size: 1.2vw;
-  }
-  .nav-footer {
-    float: left;
-  }
-  #loopstudio-footer{
-    font-size: 30px;
-    padding-left: 0%;
-    color: white;
-    font-weight: bold;
-    background-color: black;
-    text-align: center;
-    align-items: center;
-  }
-  #copyright-last-footer{
-    font-size: 18px;
-  }
-  #icons-container{
-    align-content: center;
-  }
-  .footer-nav {
-    overflow: hidden;
-    text-align: center;
-  }
-  .footer-social {
-    overflow: hidden;
-    text-align:center;
-  }
-  #hearth-img{
-  background-image: url('images-loopstudio/mobile/image-deep-earth.jpg'); 
-  }
-  #night-img{
-    background-image: url('images-loopstudio/mobile/image-night-arcade.jpg'); 
-  }
-  #soccer-img{
-    background-image:url('images-loopstudio/mobile/image-soccer-team.jpg');
-  }
-  #grid-img{
-    background-image:url('images-loopstudio/mobile/image-grid.jpg');
-  }
-  #above-img{
-    background-image:url('images-loopstudio/mobile/image-from-above.jpg');
-  }
-  #pocket-img{
-    background-image:url('images-loopstudio/mobile/image-pocket-borealis.jpg');
-  }
-  #curyosity-img{
-    background-image:url('images-loopstudio/mobile/image-curiosity.jpg');
-  }
-  #fisheye-img{
-    background-image:url('images-loopstudio/mobile/image-fisheye.jpg');
-  }
+@media  only screen and (min-width: 469px) {
+    #logo,#logo-footer{
+        width: 200px;
+    }
+    #creative-text{
+        font-size: 55px;
+    }
+    .center-link  li a {
+      font-size: 22px;
+    }
+    ul.center-link {
+        margin-top: 2%;
+        line-height: 1.2;
+        padding-left: 0;        
+    }   
+    .center-link  li {
+            display: inline;
+            text-align: center;
+      
+    }
 }
+
+.grid-img-container {
+  background-color: transparent;
+}
+.grid-img{
+  background-color: rgba(255, 255, 255, 0.8);
+  font-size: 30px;
+  text-align: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 380px;
+}
+/* flex-container-footer */
+.flex-container-footer {
+        display: flex;
+        flex-direction: row;
+        background-color: white;
+        justify-content: center;
+        align-items: center;
+}
+div#column-footer {
+        width: 100%;
+        text-align: center;
+}
+
 
 </style>
-
 </head>
+
 <body>
-    <!-- FIRST CONTAINER PINK BACKGROUND GUY WITH -->
-    <div class="flex-container" >
-        <div class="flex-item-left" >
-            <p class="text-title base-family-text" >  loopstudios    <img  id="icon-hamburger"  src="images-loopstudio/icon-hamburger.svg" >     
-            </p>
-            <p class=" marketing-text" style="font-family: 'Josefin Sans', sans-serif;" >
-                IMMERSIVE <br>
-                EXPERIENCES <br>
-                THAT DELIVER <br>
-            </p>
-        </div> 
-        <div class="flex-item-right" >
-            <ul class="nav base-family-text"  id="nav-top">
-                <li><a href="#home">About</a></li>
-                <li><a href="#about">Careers</a></li>
-                <li><a href="#clients">Events</a></li>  
-                <li><a href="#contact">Products</a></li>
-                <li><a href="#contact">Support</a></li>
+    <!-- FIRST COVER CONTAINER -->
+    <div class="grid-container">
+        <div class="left" >
+            <img id="logo"   src="images-sunnyside/logo.svg" >    
+            <img  id="hamb-icon"  style="margin-top:2%"  src="images-sunnyside/icon-hamburger.svg" >    
+        </div>
+        <div class="right" >
+            <ul id="nav-top" class="nav base-family-text"  >
+                <li><a href="#home" class="nav-link" >About</a></li>
+                <li><a href="#about" class="nav-link" >Service</a></li>
+                <li><a href="#clients" class="nav-link" >Projects</a></li> 
+                <li >  <input type="button" style="margin-top:-1%" id="btn-link" class="button" value="CONTACT" > </li> 
             </ul>
+        </div>
+        <div class="middle" >
+            <p  id="creative-text"   class="text-title base-family-text text-center" style="margin-bottom:20%;">                 
+                WE ARE CREATIVES <br> 
+                    <img src="images-sunnyside/icon-arrow-down.svg" style="margin-top: 4%;" height="180px;" alt="Emily R"  >
+            </p> 
+        </div>
+    </div>
+    <!-- TESTIMONIAL CONTAINER -->
+    <div class="grid-img-container">
+            <div class="grid-img " id="paragraph-text-1"  >
+                <div  class="text-square-container" >
+                            <p class="transform-title" >  Transform your <br>  brand </p>
+                            <p class="transform-description"  > 
+                                We are a full-service creative agency specializing in helping brands grow fast.
+                                Engage your clients through compelling visuals that do most of the marketing for you.
+                                <br><br>
+                            </p>
+                            <p class="transform-footer" >
+                                LEARN MORE  
+                            </p>
+                </div>
+            </div>
+            <div class="grid-img"  id="egg-img"  style="background-image: url('images-sunnyside/desktop/image-transform.jpg'); " >
+            </div> 
+            <div class="grid-img" id="glass-img" style="background-image: url('images-sunnyside/desktop/image-stand-out.jpg'); ">
+            </div>  
+            <div class="grid-img" id="square-txt-1"  >
+                <div class="text-square-container"  >
+                    <p     class="transform-title" >  Transform your <br>
+                    brand </p>
+                    <p  class="transform-description"  > 
+                        Using a collaborative formula of designers, researchers,
+                         photographers, videographers and copywrithers,
+                        we'll build and extend your brand in digital places.
+                        <br><br>
+                    </p>
+                    <p class="transform-footer" >
+                        LEARN MORE  
+                    </p>
+                </div>
+            </div>
+            <div class="grid-img" id="square-txt-2" style="background-image: url('images-sunnyside/desktop/image-graphic-design.jpg');background-repeat: no-repeat; background-position: center;  background-size: cover;" >
+                <div class="fruits-text-container" >
+                    <p class="fruits-text-title"  style="color: hsl(167, 40%, 24%) ">  Graphic Design 
+                    </p>
+                    <p class="fruits-text-description"  style="color:hsl(167, 40%, 24%) "> 
+                       Great design makes you memorable. We deliver artwork that underscores your brand message
+                       and captures potential client's attention.
+                        <br><br>
+                    </p>
+                </div>
+            </div>
+            <div class="grid-img" id="square-txt-3"  style="background-image: url('images-sunnyside/desktop/image-photography.jpg');background-repeat: no-repeat; background-position: center;  background-size: cover;" >
+                <div class="fruits-text-container" >
+                    <p class="fruits-text-title"  style="color: hsl(198, 62%, 26%)">  Photography 
+                    </p>
+                    <p class="fruits-text-description"   style="color:hsl(198, 62%, 26%)"  > 
+                        Increase your credibility by getting the most stunning, high quality photo that improve your business image.
+                        <br><br>
+                    </p>
+                </div>
+            </div>
+    </div>
+    <div class="flex-container"  >
+        <div style="flex: 100%;" > <p class="text-center text-testimonial"  style="color:hsl(210, 4%, 67%);"> CLIENT TESTIMONIALS </p> </div>
+    </div>
+    <div class="flex-container"  style="margin-bottom: 6%;">
+        <div class="flex-testimonial-left" >
+            <div class="column">
+                <div class="card" >
+                    <p class="text-center"> <img src="images-sunnyside/image-emily.jpg" alt="Emily R" style="width:100px;border-radius: 50%;"> </p>
+                    <p class="card-text">
+                        We put our trust in Sunnyside and they delivered making sure our 
+                        needs were met and deadlines where always hit.
+                    </p>
+                    <h4><b>Emily R.</b></h4>
+                    <p class="card-director-text">
+                        Marketing Director
+                    </p>
+                </div>
+            </div>
         </div> 
+        <div class="flex-testimonial-center" >   
+            <div class="column"> 
+                <div class="card" >
+                    <p class="text-center"> <img src="images-sunnyside/image-thomas.jpg" alt="thomas" style="width:100px;border-radius: 50%;"> </p>
+                    <p class="card-text">
+                        Sunnyside's enthusiasm coupled with their keen interest in our brand's success made it a
+                        satisfying and enjoyable experience
+                    </p>
+                    <h4><b>Thomas S.</b></h4>
+                    <p class="card-director-text" >
+                        Chief Operating Officer 
+                    </p>
+                </div>
+            </div> 
+        </div> 
+        <div class="flex-testimonial-right" >
+            <div class="column">
+                <div class="card">
+                    <p class="text-center" > <img src="images-sunnyside/image-jennie.jpg"  alt="Jennie" style="width:100px;border-radius: 50%;"> </p>
+                    <p class="card-text">
+                        Incredible and result! Our sales increased over 400% when we worked with Sunnyside.
+                        Highly raccomanded!
+                    </p>
+                    <h4><b>Jennie F.</b></h4>
+                    <p class="card-director-text">
+                        Business Owner
+                    </p>
+                </div>
+            </div> 
+        </div>
     </div> 
-    <div class="flex-container-interactive" style="margin-top: 10%;" >
-        <div class="flex-interactive-left" >
-                <img src="images-loopstudio/desktop/image-interactive.jpg"  id="img-interactive" style="background-size: cover;" id="img-man" class="img-fluid" > 
-        </div>
-        <div class="flex-interactive-right" >
-            <div class="interactive-div"   >
-                  <div class="title-interactive-text" style="font-family: 'Josefin Sans', sans-serif;margin-bottom: 2%;color:hsl(0, 0%, 41%);"><b> THE LEADER IN    <BR>
-                            INTERACTIVE VR          </b>
-                  </div>
-                  <div class="interactive-text"  >
-                    Founded in 2011, loopstudios has been producing world-class virtual reality
-                    projects for some of the best companies around the globe. Our award winnig creations
-                    have transformed business through digital experiences that bind to their brand.
-                  </div>
-            </div>
+    <div class="grid-lastimg-container" >
+        <div class="grid-img"  style="background-image: url('images-sunnyside/desktop/image-gallery-milkbottles.jpg');background-repeat: no-repeat; background-position: center;  background-size: cover;"  >
         </div> 
+        <div class="grid-img"  style="background-image: url('images-sunnyside/desktop/image-gallery-orange.jpg');background-repeat: no-repeat; background-position: center;  background-size: cover;"  >
+        </div> 
+         <div class="grid-img"  style="background-image: url('images-sunnyside/desktop/image-gallery-cone.jpg');background-repeat: no-repeat; background-position: center;  background-size: cover;"  >
+        </div>  
+        <div class="grid-img"  style="background-image: url('images-sunnyside/desktop/image-gallery-sugarcubes.jpg');background-repeat: no-repeat; background-position: center;  background-size: cover;"  >
+        </div>   
     </div>
-    <div class="flex-container-creations">
-      <div class="flex-item-creations" >
-        <p class="text-creation base-family-text" style="color:hsl(0, 0%, 41%);">  <b> OUR CREATIONS </b> </p>  
-      </div>  
-      <div class="flex-item-btn" >
-          <div class="container-btn"> <button class="button" id="see-all-btn"> SEE ALL </button>   </div> 
-      </div>  
-    </div>
-    <div class="grid-container" >
-      <div id="hearth-img"      class="grid-img" style="margin-left: 0%;">  <p class="text-img" >  DEEP <br> EARTH </p> </div>
-      <div id="night-img"       class="grid-img">  <p class="text-img" >  NIGHT <br> ARCADE </p> </div>
-      <div id="soccer-img"      class="grid-img">   <p class="text-img" > SOCCER TEAM VR <br>  </p></div>  
-      <div id="grid-img"        class="grid-img"><p class="text-img" >THE GRID <br>  </p></div> 
-      <div id="above-img"       class="grid-img"  style="margin-left: 0%;"> <p class="text-img" >FROM UP ABOVE VR <br>  </p></div>
-      <div id="pocket-img"      class="grid-img"><p class="text-img" >POCKET BOREALIS <br>  </p></div>
-      <div id="curyosity-img"   class="grid-img"> <p class="text-img" >THE CURIOSITY <br>  </p> </div>
-      <div id="fisheye-img"     class="grid-img"><p class="text-img" >MAKE IT FISHEY<br>  </p> </div>
-    </div>
-    <div style="text-align: center;margin-top:5%;"> <button class="button" id="see-all-btn-sm"> SEE ALL </button> </div>
-    <div class="flex-container-interactive" style="margin-top: 20%;background-color: black;" >
-      <div class="flex-interactive-footer-left"   style="background-color: black;">
-            <div class="nav-container" > 
-                   <p id="loopstudio-footer"> Loopstudio </p>
-            </div>
-            <div class="nav-last-footer" id="last-nav-footer">
-                  <ul class="base-family-text" id="nav-footer-company" style="padding-left: 0%;">
-                    <li><a  href="#home" >About</a></li>
-                    <li><a href="#about">Careers</a></li>
-                    <li><a href="#clients">Events</a></li>
-                    <li><a href="#contact">Products</a></li>
-                    <li><a href="#contact">Support</a></li>
-                  </ul>
-            </div>
-      </div> 
-      <div class="flex-interactive-footer"   >
-                <div class="footer-social" >
-                  <a href="#" > <img src="images-loopstudio/icon-facebook.svg"      class="img-fluid"  ></a>
-                  <a href="#" > <img src="images-loopstudio/icon-facebook.svg"      class="img-fluid"  ></a>
-                  <a href="#" > <img src="images-loopstudio/icon-facebook.svg"      class="img-fluid"  ></a>
-                  <a href="#" > <img src="images-loopstudio/icon-facebook.svg"      class="img-fluid"  ></a>
-                </div> 
-                <div class="nav-last-footer" id="last-copyright-footer" style="margin-top:47px">  @2021 Loopstudios. All right reserved.</div>
-      </div> 
-    </div>
-
-
-    <!--  *** TEMPORARY PAUSED *** 
-    <div class="footer-container">
-      <div class="nav-container  footer-nav"> 
-        <div class="nav-last-footer" id="last-nav-footer">
-          <ul class="base-family-text" id="nav-footer-company" style="padding-left: 0%;">
-            <li><a  href="#home" >About</a></li>
-            <li><a href="#about">Careers</a></li>
-            <li><a href="#clients">Events</a></li>
-            <li><a href="#contact">Products</a></li>
-            <li><a href="#contact">Support</a></li>
-          </ul>
-        </div>
-        <div class="social-container-sm">
-          <div class="footer-social">
-            <a href="#" > <img src="images-loopstudio/icon-facebook.svg"   class="img-fluid"  ></a>
-            <a href="#" > <img src="images-loopstudio/icon-facebook.svg"   class="img-fluid"  ></a>
-            <a href="#" > <img src="images-loopstudio/icon-facebook.svg"   class="img-fluid"  ></a>
-            <a href="#" > <img src="images-loopstudio/icon-facebook.svg"   class="img-fluid"  ></a>
-          </div> 
-          <div class="nav-last-footer" id="last-copyright-footer" >  @2021 Loopstudios. All right reserved.</div>
-        </div>
-      </div>
-      <div class="social-container">
-          <div class="nav-last-footer" id="last-copyright-footer" >  @2021 Loopstudios. All right reserved.</div>
-      </div>
-    </div>-->
-<script>  
-/*  
-    const mediaQuery = window.matchMedia('(max-width: 801px)')
-      // Check if the media query is true
-      if (mediaQuery.matches) {
-        // Then trigger an alert
-        $("#footer-social").remove();
-    }*/
-</script>
-
+    <div class="flex-container-footer" >
+                    <div class="text-title base-family-text" style="color: red;background-color: hsl(168, 34%, 41%);width: 100%;" >
+                        <div id="column-footer" >
+                            <img   id="logo-footer"  src="images-sunnyside/logo.svg" >    
+                                    <ul class="center-link">
+                                        <li><a href="http://www.amazon.com" >About</a></li>
+                                        <li><a href="http://www.amazon.com" style="padding-left: 5%;padding-right: 5%;">Services</a></li>
+                                        <li><a href="http://www.amazon.com" >Products</a></li>
+                                    </ul>
+                            <br>
+                                <img src="images-sunnyside/icon-facebook.svg" alt="Emily R"   style ="margin-left: 0%;" class="social-icon-footer"  >
+                                <img src="images-sunnyside/icon-facebook.svg" alt="Emily R"   class="social-icon-footer"  >
+                                <img src="images-sunnyside/icon-facebook.svg" alt="Emily R"   class="social-icon-footer"  >
+                                <img src="images-sunnyside/icon-facebook.svg" alt="Emily R"   class="social-icon-footer"  >
+                        </div>
+                    </div>  
+    </div>  
 </body>
-</html>
